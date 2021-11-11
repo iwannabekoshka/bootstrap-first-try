@@ -64,7 +64,13 @@
               We focus on teaching our students the fundamentals of the being
               Koshka's to prepare them for their first Koshka's role
             </p>
-            <button class="btn btn-primary btn-lg">Start The Enrollment</button>
+            <button
+              class="btn btn-primary btn-lg"
+              data-bs-toggle="modal"
+              data-bs-target="#enroll"
+            >
+              Start The Enrollment
+            </button>
           </div>
           <img
             class="img-fluid w-50 d-none d-sm-block"
@@ -283,12 +289,14 @@
             <div class="card bg-light">
               <div class="card-body text-center">
                 <img
-                class="rounded-circle mb-3" 
-                src="https://randomuser.me/api/portraits/men/1.jpg" 
-                alt="Man">
+                  class="rounded-circle mb-3"
+                  src="https://randomuser.me/api/portraits/men/1.jpg"
+                  alt="Man"
+                />
                 <h3 class="card-title mb-3">Koshkaman</h3>
                 <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, magnam.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquam, magnam.
                 </p>
                 <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
                 <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
@@ -302,12 +310,14 @@
             <div class="card bg-light">
               <div class="card-body text-center">
                 <img
-                class="rounded-circle mb-3" 
-                src="https://randomuser.me/api/portraits/women/2.jpg" 
-                alt="Man">
+                  class="rounded-circle mb-3"
+                  src="https://randomuser.me/api/portraits/women/2.jpg"
+                  alt="Man"
+                />
                 <h3 class="card-title mb-3">Koshkaman</h3>
                 <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, magnam.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquam, magnam.
                 </p>
                 <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
                 <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
@@ -321,12 +331,14 @@
             <div class="card bg-light">
               <div class="card-body text-center">
                 <img
-                class="rounded-circle mb-3" 
-                src="https://randomuser.me/api/portraits/men/2.jpg" 
-                alt="Man">
+                  class="rounded-circle mb-3"
+                  src="https://randomuser.me/api/portraits/men/2.jpg"
+                  alt="Man"
+                />
                 <h3 class="card-title mb-3">Koshkaman</h3>
                 <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, magnam.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquam, magnam.
                 </p>
                 <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
                 <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
@@ -340,12 +352,14 @@
             <div class="card bg-light">
               <div class="card-body text-center">
                 <img
-                class="rounded-circle mb-3" 
-                src="https://randomuser.me/api/portraits/women/1.jpg" 
-                alt="Man">
+                  class="rounded-circle mb-3"
+                  src="https://randomuser.me/api/portraits/women/1.jpg"
+                  alt="Man"
+                />
                 <h3 class="card-title mb-3">Koshkaman</h3>
                 <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, magnam.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquam, magnam.
                 </p>
                 <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
                 <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
@@ -382,10 +396,7 @@
           </div>
           <!-- Col -->
           <div class="col-md">
-            <img 
-            class="img-fluid"
-            src="http://placehold.it/500x300" 
-            alt="">
+            <img class="img-fluid" src="http://placehold.it/500x300" alt="" />
           </div>
         </div>
       </div>
@@ -395,12 +406,62 @@
     <footer class="p-5 bg-dark text-light position-relative text-center">
       <div class="container">
         <p class="lead m-0">Copyright &copy; 2021 Koshka's</p>
-        
+
         <a href="#" class="position-absolute bottom-0 end-0 p-5">
           <i class="bi bi-arrow-up-circle h1"></i>
         </a>
       </div>
     </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="enroll"
+      tabindex="-1"
+      aria-labelledby="enrollLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Fill out dis form and we will get back to u</p>
+            <form>
+              <div class="mb-3">
+                <label for="first-name" class="col-form-label">First Name:</label>
+                <input type="text" class="form-control" placeholder="Ыыы">
+              </div>
+              <div class="mb-3">
+                <label for="first-name" class="col-form-label">First Name:</label>
+                <input type="text" class="form-control" placeholder="Ыыы">
+              </div>
+              <div class="mb-3">
+                <label for="first-name" class="col-form-label">First Name:</label>
+                <input type="text" class="form-control" placeholder="Ыыы">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Submit</button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- BOOTSTRAP -->
     <script
